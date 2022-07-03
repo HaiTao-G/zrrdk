@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dibole.dao.mysql.zrrdk.ZrrAttachMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dibole.entity.zrrdk.ZrrAttach">
+        <id column="rec_id" property="recId" />
+        <result column="file_type" property="fileType" />
+        <result column="file_oss_url" property="fileOssUrl" />
+        <result column="file_relative_path" property="fileRelativePath" />
+        <result column="file_save_name" property="fileSaveName" />
+        <result column="file_source_name" property="fileSourceName" />
+        <result column="attach_uid" property="attachUid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        rec_id, file_type, file_oss_url, file_relative_path, file_save_name, file_source_name, attach_uid
+    </sql>
+
+</mapper>

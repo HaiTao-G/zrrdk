@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dibole.dao.mysql.zrrdk.ZrrCompanyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dibole.entity.zrrdk.ZrrCompany">
+        <id column="rec_id" property="recId" />
+        <result column="user_id" property="userId" />
+        <result column="company_name" property="companyName" />
+        <result column="tax_num" property="taxNum" />
+        <result column="address" property="address" />
+        <result column="bank_name" property="bankName" />
+        <result column="account_name" property="accountName" />
+        <result column="bank_account" property="bankAccount" />
+        <result column="phone_num" property="phoneNum" />
+        <result column="license_id" property="licenseId" />
+        <result column="status" property="status" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        rec_id, user_id, company_name, tax_num, address, bank_name, account_name, bank_account, phone_num, license_id, status, create_time, update_time
+    </sql>
+
+</mapper>

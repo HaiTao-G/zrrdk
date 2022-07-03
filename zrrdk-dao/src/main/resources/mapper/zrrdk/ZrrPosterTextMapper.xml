@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dibole.dao.mysql.zrrdk.ZrrPosterTextMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dibole.entity.zrrdk.ZrrPosterText">
+        <id column="rec_id" property="recId" />
+        <result column="model_id" property="modelId" />
+        <result column="press_text" property="pressText" />
+        <result column="x" property="x" />
+        <result column="y" property="y" />
+        <result column="red" property="red" />
+        <result column="green" property="green" />
+        <result column="blue" property="blue" />
+        <result column="family_name" property="familyName" />
+        <result column="style" property="style" />
+        <result column="size" property="size" />
+        <result column="alpha" property="alpha" />
+        <result column="creation_time" property="creationTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        rec_id, model_id, press_text, x, y, red, green, blue, family_name, style, size, alpha, creation_time, update_time, status
+    </sql>
+
+</mapper>

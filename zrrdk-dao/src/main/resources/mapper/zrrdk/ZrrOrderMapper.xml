@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dibole.dao.mysql.zrrdk.ZrrOrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dibole.entity.zrrdk.ZrrOrder">
+        <id column="rec_id" property="recId" />
+        <result column="user_id" property="userId" />
+        <result column="park_id" property="parkId" />
+        <result column="company_id" property="companyId" />
+        <result column="category_id" property="categoryId" />
+        <result column="drawer_id" property="drawerId" />
+        <result column="price" property="price" />
+        <result column="need_pay" property="needPay" />
+        <result column="address_id" property="addressId" />
+        <result column="comment" property="comment" />
+        <result column="voucher" property="voucher" />
+        <result column="contract" property="contract" />
+        <result column="order_status" property="orderStatus" />
+        <result column="pay_status" property="payStatus" />
+        <result column="service_rate" property="serviceRate" />
+        <result column="channel_rate" property="channelRate" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="delivery_name" property="deliveryName" />
+        <result column="delivery_no" property="deliveryNo" />
+        <result column="order_url" property="orderUrl" />
+        <result column="pay_id" property="payId" />
+        <result column="channel_id" property="channelId" />
+        <result column="channel_type" property="channelType" />
+        <result column="source_id" property="sourceId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        rec_id, user_id, park_id, company_id, category_id, drawer_id, price, need_pay, address_id, comment, voucher, contract, order_status, pay_status, service_rate, channel_rate, create_time, update_time, delivery_name, delivery_no, order_url, pay_id, channel_id, channel_type, source_id
+    </sql>
+
+</mapper>

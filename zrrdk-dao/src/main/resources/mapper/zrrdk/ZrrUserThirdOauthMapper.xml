@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dibole.dao.mysql.zrrdk.ZrrUserThirdOauthMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dibole.entity.zrrdk.ZrrUserThirdOauth">
+        <id column="rec_id" property="recId" />
+        <result column="user_id" property="userId" />
+        <result column="oauth_id" property="oauthId" />
+        <result column="login_type" property="loginType" />
+        <result column="uuid" property="uuid" />
+        <result column="source_id" property="sourceId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        rec_id, user_id, oauth_id, login_type, uuid, source_id
+    </sql>
+
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dibole.dao.mysql.zrrdk.ZrrSystemParameterMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dibole.entity.zrrdk.ZrrSystemParameter">
+        <id column="REC_ID" property="recId" />
+        <result column="PARAMETER_TYPE" property="parameterType" />
+        <result column="PARAMETER_KEY" property="parameterKey" />
+        <result column="PARAMETER_NAME" property="parameterName" />
+        <result column="PARAMETER_VALUE" property="parameterValue" />
+        <result column="WEIGHT" property="weight" />
+        <result column="logo" property="logo" />
+        <result column="PARENT_PARAMETER_TYPE" property="parentParameterType" />
+        <result column="PARENT_PARAMETER_KEY" property="parentParameterKey" />
+        <result column="level" property="level" />
+        <result column="status" property="status" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        REC_ID, PARAMETER_TYPE, PARAMETER_KEY, PARAMETER_NAME, PARAMETER_VALUE, WEIGHT, logo, PARENT_PARAMETER_TYPE, PARENT_PARAMETER_KEY, level, status, CREATE_TIME, UPDATE_TIME
+    </sql>
+
+</mapper>

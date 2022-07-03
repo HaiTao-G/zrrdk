@@ -1,0 +1,64 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /wxapp
+
+spring:
+  datasource:
+    dynamic:
+      #全局连接池配置
+      hikari:
+        # 最小连接数
+        minimum-idle: 5
+        # 最大连接数
+        maximum-pool-size: 15
+        # 自动提交
+        auto-commit: true
+        # 获取连接池连接等待最大时长
+        idle-timeout: 30000
+        # 连接池名称
+        pool-name: henhikari
+        # 连接最长生存时间
+        max-lifetime: 1800000
+        # 连接超时时长
+        connection-timeout: 30000
+      primary: master #设置默认的数据源或者数据源组,默认值即为master
+      strict: false #设置严格模式,默认false不启动. 启动后在未匹配到指定数据源时候会抛出异常,不启动则使用默认数据源.
+      datasource:
+        master:
+          url: jdbc:p6spy:mysql://localhost:3306/mybatis-plus?useSSL=false&serverTimeZone=GMT%2B8
+          username: root
+          password: 123456
+          driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+        slave:
+          url: jdbc:p6spy:mysql://172.81.206.191:3307/lyb-test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+          username: root
+          password: 123456
+          driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  #mapper 映射文件
+  mapper-locations: classpath*:mapper/**/*.xml
+
+# xxx_job
+xxl:
+  job:
+    # xxl-job, access token
+    accessToken:
+    admin:
+      #  xxl-job admin address list
+      addresses:  http://127.0.0.1:8080/xxl-job-admin
+    # xxl-job executor appname
+    executor:
+      appname: xxl-job-executor-sample
+      address:
+      ip:
+      port:
+      # xxl-job executor log-path
+      logpath: /data/applogs/xxl-job/jobhandler
+      # xxl-job executor log-retention-days
+      logretentiondays: 30
+

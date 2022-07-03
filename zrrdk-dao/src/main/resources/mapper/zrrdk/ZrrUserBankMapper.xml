@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dibole.dao.mysql.zrrdk.ZrrUserBankMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dibole.entity.zrrdk.ZrrUserBank">
+        <id column="rec_id" property="recId" />
+        <result column="user_id" property="userId" />
+        <result column="bind_acc_num" property="bindAccNum" />
+        <result column="bind_open_bank_name" property="bindOpenBankName" />
+        <result column="open_bank_name" property="openBankName" />
+        <result column="open_bank_province" property="openBankProvince" />
+        <result column="open_bank_city" property="openBankCity" />
+        <result column="bind_open_org_num" property="bindOpenOrgNum" />
+        <result column="openid" property="openid" />
+        <result column="bank_id" property="bankId" />
+        <result column="alipay_account" property="alipayAccount" />
+        <result column="alipay_bank_id" property="alipayBankId" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        rec_id, user_id, bind_acc_num, bind_open_bank_name, open_bank_name, open_bank_province, open_bank_city, bind_open_org_num, openid, bank_id, alipay_account, alipay_bank_id, create_time, update_time, status
+    </sql>
+
+</mapper>

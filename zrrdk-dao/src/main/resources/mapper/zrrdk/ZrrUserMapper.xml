@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dibole.dao.mysql.zrrdk.ZrrUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dibole.entity.zrrdk.ZrrUser">
+        <id column="REC_ID" property="recId" />
+        <result column="LOGIN_NAME" property="loginName" />
+        <result column="LOGIN_PASS" property="loginPass" />
+        <result column="CERT_CODE" property="certCode" />
+        <result column="CERT_PASS" property="certPass" />
+        <result column="CERT_TYPE" property="certType" />
+        <result column="CERT_NAME" property="certName" />
+        <result column="CERT_IMG" property="certImg" />
+        <result column="UNION_ID" property="unionId" />
+        <result column="OPEN_ID" property="openId" />
+        <result column="WX_APP_ID" property="wxAppId" />
+        <result column="BIND_MOBILE" property="bindMobile" />
+        <result column="USER_NAME" property="userName" />
+        <result column="ACCT_STATUS" property="acctStatus" />
+        <result column="USER_IMG" property="userImg" />
+        <result column="NICK_NAME" property="nickName" />
+        <result column="GROUP_ID" property="groupId" />
+        <result column="PERSON_ID" property="personId" />
+        <result column="REG_FLAG" property="regFlag" />
+        <result column="UPD_PWD_TIME" property="updPwdTime" />
+        <result column="REG_DTTM" property="regDttm" />
+        <result column="REG_ROLETYPE" property="regRoletype" />
+        <result column="LAST_LOGINFO" property="lastLoginfo" />
+        <result column="LAST_LOGIN_TIME" property="lastLoginTime" />
+        <result column="BIZ_ROLES" property="bizRoles" />
+        <result column="CITY" property="city" />
+        <result column="invitecode_img_id" property="invitecodeImgId" />
+        <result column="inviter_id" property="inviterId" />
+        <result column="business_id" property="businessId" />
+        <result column="is_channel" property="isChannel" />
+        <result column="service_rate" property="serviceRate" />
+        <result column="service_downstream_rate" property="serviceDownstreamRate" />
+        <result column="channel_id" property="channelId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        REC_ID, LOGIN_NAME, LOGIN_PASS, CERT_CODE, CERT_PASS, CERT_TYPE, CERT_NAME, CERT_IMG, UNION_ID, OPEN_ID, WX_APP_ID, BIND_MOBILE, USER_NAME, ACCT_STATUS, USER_IMG, NICK_NAME, GROUP_ID, PERSON_ID, REG_FLAG, UPD_PWD_TIME, REG_DTTM, REG_ROLETYPE, LAST_LOGINFO, LAST_LOGIN_TIME, BIZ_ROLES, CITY, invitecode_img_id, inviter_id, business_id, is_channel, service_rate, service_downstream_rate, channel_id
+    </sql>
+
+</mapper>

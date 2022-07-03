@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zrrdk-dao" />
+        <module name="zrrdk-demo" />
+        <module name="zrrdk-commons" />
+        <module name="zrrdk-util" />
+        <module name="zrrdk-admin" />
+        <module name="zrrdk-h5" />
+        <module name="zrrdk-entity" />
+        <module name="zrrdk-codegenerator" />
+        <module name="zrrdk-wxapp" />
+        <module name="zrrdk-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zrrdk-samples" target="1.8" />
+      <module name="zrrdk-samples-job" target="1.8" />
+      <module name="zrrdk-samples-swagger" target="8" />
+      <module name="zrrdk-samples-test" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

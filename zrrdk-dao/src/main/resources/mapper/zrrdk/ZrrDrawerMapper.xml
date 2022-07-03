@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dibole.dao.mysql.zrrdk.ZrrDrawerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dibole.entity.zrrdk.ZrrDrawer">
+        <id column="rec_id" property="recId" />
+        <result column="user_id" property="userId" />
+        <result column="drawer_name" property="drawerName" />
+        <result column="phone_num" property="phoneNum" />
+        <result column="email" property="email" />
+        <result column="idcard_obverse_id" property="idcardObverseId" />
+        <result column="idcard_other_id" property="idcardOtherId" />
+        <result column="status" property="status" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="drawer_number" property="drawerNumber" />
+        <result column="drawer_address" property="drawerAddress" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        rec_id, user_id, drawer_name, phone_num, email, idcard_obverse_id, idcard_other_id, status, create_time, update_time, drawer_number, drawer_address
+    </sql>
+
+</mapper>
